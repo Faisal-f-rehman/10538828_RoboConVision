@@ -79,7 +79,7 @@ The GUI interface has four options, New Game, Align Camera, Calibrate Camera and
 
 <br>
 
-+ Aligning the camera option, helps aligning the game board with the camera frame. This is a necessary process and is achieved by placing and moveing the game board and camera until all circles of the board fits within the grid boxes. 
++ Aligning the camera option, helps aligning the game board with the camera frame. This is a necessary process and is achieved by placing and moving the game board and camera until all circles of the board fits within the grid boxes. 
 
 <br>
 
