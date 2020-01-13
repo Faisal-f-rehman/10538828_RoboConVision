@@ -1,4 +1,4 @@
-# **ROCO318 COURSEWORK - ROBOCON**
+# **ROCO318 Coursework - RoboCon (Vision)**
 ### Vision system for Connect 4
 
 <img src="https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/connect4header.jpeg?raw=true" height="100%" width="100%"/>
