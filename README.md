@@ -114,7 +114,7 @@ The following video shows camera performance without calibration first and then 
 ## SECTION X - REFERENCE
 -----------------------------------
 
-### Picture Ref 1: https://store-images.s-microsoft.com/
+### Picture Ref 1: Microsoft Website
 https://store-images.s-microsoft.com/image/apps.41929.14246448385562777.7795b656-4cc6-43e1-897f-ecca74691263.ce6424bf-ec09-434a-9a0d-6d9507621cfa?mode=scale&q=90&h=1080&w=1920
 
 ### Ref 2: https://docs.opencv.org/2.4/
