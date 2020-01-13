@@ -98,13 +98,15 @@ The GUI interface has four options, New Game, Align Camera, Calibrate Camera and
 <br>
 
                                           Calibration Video Demonstration
+The following video shows camera performance without calibration first and then the improvement in the performance of the camera after calibration.                                             
                                           
 [![](https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/CalibrationYoutubePic.png?raw=true)](https://youtu.be/lfmS6HFSoqU)
 
-
-
 **Note: Before calibrating the camera please make sure the board is properly aligned with the camera**    
 
+<br>
+
++ Exit Game option only becomes available when there are no other sequences in progress or running. Pressing this button will close the GUI window and game terminal.
 
 <br> <br>
 
@@ -114,3 +116,6 @@ The GUI interface has four options, New Game, Align Camera, Calibrate Camera and
 
 ### Picture Ref 1: https://store-images.s-microsoft.com/
 https://store-images.s-microsoft.com/image/apps.41929.14246448385562777.7795b656-4cc6-43e1-897f-ecca74691263.ce6424bf-ec09-434a-9a0d-6d9507621cfa?mode=scale&q=90&h=1080&w=1920
+
+### Ref 2: https://docs.opencv.org/2.4/
+The link above was used as the main source for OpenCV research, reading and learning for this project.
