@@ -52,8 +52,8 @@ void Vision::calibration(){
     //----------------------------//
 
     std::cout << "Calibrating camera for yellow disks..." << std::endl;
-    for (int i = 0; i < 255; i+=5){
-        for (int j = 0; j < 255; j+=5){
+    for (int i = 0; i < 255; i+=10){
+        for (int j = 0; j < 255; j+=10){
 
             std::cout << "i: " << i << " j: " << j
                       << "Yellow HSV : " << _yellow_hsv[0]
@@ -84,7 +84,9 @@ void Vision::calibration(){
                  (stateRec._yellow[25] == false) && (stateRec._yellow[26] == false) &&
                  (stateRec._yellow[32] == false) && (stateRec._yellow[33] == false) &&
                  (stateRec._yellow[39] == false) && (stateRec._yellow[40] == false)){
-
+                
+                _yellow_hsv[1] = i+10;
+                _yellow_hsv[2] = j+20;
                 converged = true;
                 break;
             }
@@ -122,8 +124,8 @@ void Vision::calibration(){
     //============================================================================//
 
     std::cout << "Calibrating camera for red disks..." << std::endl;
-    for (int i = 0; i < 255; i+=5){
-        for (int j = 0; j < 255; j+=5){
+    for (int i = 0; i < 255; i+=10){
+        for (int j = 0; j < 255; j+=10){
 
             std::cout << "i: " << i << " j: " << j
                       << "RED HSV 1 : " << _red_hsv[0]
@@ -160,7 +162,7 @@ void Vision::calibration(){
                  (stateRec._red[25] == false) && (stateRec._red[26] == false) &&
                  (stateRec._red[32] == false) && (stateRec._red[33] == false) &&
                  (stateRec._red[39] == false) && (stateRec._red[40] == false) ){
-
+            
                 converged = true;
                 break;
             }
