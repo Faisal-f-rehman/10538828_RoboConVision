@@ -116,19 +116,19 @@ The following video shows camera performance without calibration first and then 
 I ran tests on the system in 3 different lights and locations. This was done to find the effects on the colour detection performance of the system in different lights. It was observed that unless the light was extremely dim / dark or extremely bright, after calibrating the camera the results were consistent and satisfactory.
 
 
-                       Light / Camera Calibration Test at Night with YELLOW LIGHT ONLY Video
+                      Light / Camera Calibration Test at Night with YELLOW LIGHT ONLY Video
                                
 [![](https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/CalibrationYoutubePic.png?raw=true)](https://youtu.be/lfmS6HFSoqU)
 
 <br>
 
-                              Light / Camera Calibration Test in DAY LIGHT ONLY Video
+                            Light / Camera Calibration Test in DAY LIGHT ONLY Video
                                
 [![](https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/calibrateCameraDaylightOnly.png?raw=true)](https://youtu.be/0h1RfLp7IB8)                               
                                
 <br>
 
-                            Light / Camera Calibration Test in DAY AND YELLOW LIGHT Video
+                          Light / Camera Calibration Test in DAY AND YELLOW LIGHT Video
 
 [![](https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/calibrateCameraDayAndYellowLight.png?raw=true)](https://youtu.be/wggh8jGW_Kw)
 
