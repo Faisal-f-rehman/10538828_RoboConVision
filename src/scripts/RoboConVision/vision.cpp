@@ -36,6 +36,7 @@ uint8_t Vision::getCamID(){
 //___Calibrates for light in the room
 void Vision::calibration(){
     GuiComms gui;
+    uint8_t hits = 0;
     bool exitGameFlag = false;
     //___Initiate Camera________________________________________________//
     cv::VideoCapture cap(getCamID());                                   //
@@ -55,7 +56,7 @@ void Vision::calibration(){
     for (int i = 0; i < 255; i+=10){
         for (int j = 0; j < 255; j+=10){
 
-            std::cout << "i: " << i << " j: " << j
+            std::cout << "S: " << j << " V: " << i << "   "
                       << "Yellow HSV : " << _yellow_hsv[0]
                     << "    " << _yellow_hsv[1]
                     << "    " << _yellow_hsv[2]
@@ -85,14 +86,23 @@ void Vision::calibration(){
                  (stateRec._yellow[32] == false) && (stateRec._yellow[33] == false) &&
                  (stateRec._yellow[39] == false) && (stateRec._yellow[40] == false)){
                 
-                _yellow_hsv[1] = i+10;
-                _yellow_hsv[2] = j+20;
-                converged = true;
+                
+                if (hits >= CAL_HITS){
+                    hits = 0;
+                    _yellow_hsv[1] = j;
+                    _yellow_hsv[2] = i;
+                    converged = true;
+                }
+                else{
+                    _yellow_hsv[1] = j;
+                    _yellow_hsv[2] = i;
+                    hits++;
+                }
                 break;
             }
             else{
-                _yellow_hsv[1] = i;
-                _yellow_hsv[2] = j;
+                _yellow_hsv[1] = j;
+                _yellow_hsv[2] = i;
             }
             
             std::string gState = gui.checkState();
@@ -127,13 +137,13 @@ void Vision::calibration(){
     for (int i = 0; i < 255; i+=10){
         for (int j = 0; j < 255; j+=10){
 
-            std::cout << "i: " << i << " j: " << j
+            std::cout << "S: " << j << " V: " << i << "   "
                       << "RED HSV 1 : " << _red_hsv[0]
                     << "    " << _red_hsv[1]
                     << "    " << _red_hsv[2]
                     << "    " << _red_hsv[3]
                     << "    " << _red_hsv[4]
-                    << "    " << _red_hsv[5] << std::endl
+                    << "    " << _red_hsv[5] << "   "
                     << "RED HSV 2 : " << _red_hsv[6]
                     << "    " << _red_hsv[7]
                     << "    " << _red_hsv[8]
@@ -162,13 +172,33 @@ void Vision::calibration(){
                  (stateRec._red[25] == false) && (stateRec._red[26] == false) &&
                  (stateRec._red[32] == false) && (stateRec._red[33] == false) &&
                  (stateRec._red[39] == false) && (stateRec._red[40] == false) ){
-            
-                converged = true;
+                     
+                
+                
+                if (hits >= CAL_HITS){
+                    hits = 0;
+                    _red_hsv[1] = j;
+                    _red_hsv[2] = i;
+                    _red_hsv[7] = j;
+                    _red_hsv[8] = i;
+                    converged = true;
+                }
+                else{
+                    _red_hsv[1] = j;
+                    _red_hsv[2] = i;
+                    _red_hsv[7] = j;
+                    _red_hsv[8] = i;
+                    hits++;
+                }
+                break;
+
                 break;
             }
             else{
-                _red_hsv[1] = i;
-                _red_hsv[2] = j;
+                _red_hsv[1] = j;
+                _red_hsv[2] = i;
+                _red_hsv[7] = j;
+                _red_hsv[8] = i;
             }
 
             std::string gState = gui.checkState();

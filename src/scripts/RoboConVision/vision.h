@@ -16,6 +16,8 @@
 #define WIN_NAME_RED_BLOB "Red_Blobs_Found"
 #define WIN_NAME_UNKNOWN_BLOB "Colour_Unknown_Blobs_Found"
 
+#define CAL_HITS 2
+
 class Vision
 {
 private:
