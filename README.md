@@ -2,7 +2,7 @@
 ### Vision system for Connect 4
 
 <img src="https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/connect4header.jpeg?raw=true" height="100%" width="100%"/>
-(Picture Ref 1)
+(Ref 1 - Connect 4 Picture)
 
 <br> <br>
 
@@ -116,19 +116,19 @@ The following video shows camera performance without calibration first and then 
 I ran tests on the system in 3 different lights and locations. This was done to find the effects on the colour detection performance of the system in different lights. It was observed that unless the light was extremely dim / dark or extremely bright, after calibrating the camera the results were consistent and satisfactory.
 
 
-                               Light / Camera Calibration Test at Night with YELLOW LIGHT ONLY Video
+                       Light / Camera Calibration Test at Night with YELLOW LIGHT ONLY Video
                                
 [![](https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/CalibrationYoutubePic.png?raw=true)](https://youtu.be/lfmS6HFSoqU)
 
 <br>
 
-                               Light / Camera Calibration Test in DAY LIGHT ONLY Video
+                              Light / Camera Calibration Test in DAY LIGHT ONLY Video
                                
 [![](https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/calibrateCameraDaylightOnly.png?raw=true)](https://youtu.be/0h1RfLp7IB8)                               
                                
 <br>
 
-                               Light / Camera Calibration Test in DAY AND YELLOW LIGHT Video
+                            Light / Camera Calibration Test in DAY AND YELLOW LIGHT Video
 
 [![](https://github.com/Faisal-f-rehman/10538828_RoboConVision/blob/master/src/docs/calibrateCameraDayAndYellowLight.png?raw=true)](https://youtu.be/wggh8jGW_Kw)
 
@@ -138,7 +138,7 @@ I ran tests on the system in 3 different lights and locations. This was done to 
 ## SECTION 5 - REFERENCE
 -----------------------------------
 
-### Picture Ref 1: Microsoft Website
+### Ref 1: Microsoft Website
 https://store-images.s-microsoft.com/image/apps.41929.14246448385562777.7795b656-4cc6-43e1-897f-ecca74691263.ce6424bf-ec09-434a-9a0d-6d9507621cfa?mode=scale&q=90&h=1080&w=1920
 
 ### Ref 2: https://docs.opencv.org/2.4/
